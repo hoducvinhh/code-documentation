@@ -46,3 +46,9 @@ Read entry points, routers, configs, and database schemas incrementally.
 
 ### Step 4: Collect Evidence
 Record verified file paths, line references, and function symbols.
+
+### Step 5: Formulate Documentation Plan
+Select blueprint templates from `assets/` and plan non-destructive updates.
+
+### Step 6: Author or Update Documentation
+Draft clear, anchor-friendly markdown adhering to formatting rules.
