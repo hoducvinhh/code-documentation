@@ -3,7 +3,7 @@
 - **Tên dự án**: `code-documentation-skill`
 - **Loại dự án**: Open Source Agent Skill ([Agent Skills Specification](https://agentskills.io/specification))
 - **Phiên bản đặc tả**: 1.0
-- **Trạng thái**: Khởi tạo phát triển (Phase 1: MVP Foundation)
+- **Trạng thái**: Hoàn thành Phase 1 (MVP Foundation)
 - **Thư mục dự án**: `Z:\Learn_Programming\code-documentation`
 
 ---
@@ -216,11 +216,11 @@ pytest tests/ -v
 
 ## 6. Tiêu Chí Hoàn Thành Phase 1 (Acceptance Criteria)
 
-- [ ] Cấu trúc thư mục dự án hoàn chỉnh đúng đặc tả kỹ thuật.
-- [ ] File `skills/code-documentation/SKILL.md` hợp lệ theo chuẩn `agentskills.io`.
-- [ ] 4 helper scripts (`scan-project.py`, `check-links.py`, `validate-docs.py`, `detect-secrets.py`) hoạt động độc lập và ổn định bằng Python Standard Library.
-- [ ] Toàn bộ unit tests trong `tests/` pass 100%.
-- [ ] Hai bộ fixture `nodejs-typescript` và `python` hoạt động đúng kỳ vọng khi scan.
-- [ ] Các tài liệu open-source căn bản (`README.md`, `LICENSE`, `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `ROADMAP.md`) được hoàn thiện đầy đủ.
-- [ ] Bộ tài liệu mẫu (`assets/*.template.md`) và hướng dẫn kỹ thuật (`references/*.md`) đã sẵn sàng.
+- [x] Cấu trúc thư mục dự án hoàn chỉnh đúng đặc tả kỹ thuật.
+- [x] File `skills/code-documentation/SKILL.md` hợp lệ theo chuẩn `agentskills.io`.
+- [x] 4 helper scripts (`scan-project.py`, `check-links.py`, `validate-docs.py`, `detect-secrets.py`) hoạt động độc lập và ổn định bằng Python Standard Library.
+- [x] Toàn bộ unit tests trong `tests/` pass 100%.
+- [x] Hai bộ fixture `nodejs-typescript` và `python` hoạt động đúng kỳ vọng khi scan.
+- [x] Các tài liệu open-source căn bản (`README.md`, `LICENSE`, `CONTRIBUTING.md`, `CHANGELOG.md`, `SECURITY.md`, `ROADMAP.md`) được hoàn thiện đầy đủ.
+- [x] Bộ tài liệu mẫu (`assets/*.template.md`) và hướng dẫn kỹ thuật (`references/*.md`) đã sẵn sàng.
 
