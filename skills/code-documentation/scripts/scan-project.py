@@ -22,3 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+DOC_PATTERNS = re.compile(r'^(README|CONTRIBUTING|CHANGELOG|LICENSE)(\.[a-zA-Z0-9]+)?$', re.I)
