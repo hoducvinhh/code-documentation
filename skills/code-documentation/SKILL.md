@@ -40,3 +40,9 @@ Clarify target audience, scope, and document types.
 
 ### Step 2: Discover Project
 Run `scan-project.py` to inspect manifests, frameworks, and existing files.
+
+### Step 3: Analyze Relevant Code
+Read entry points, routers, configs, and database schemas incrementally.
+
+### Step 4: Collect Evidence
+Record verified file paths, line references, and function symbols.
