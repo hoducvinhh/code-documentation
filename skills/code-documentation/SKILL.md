@@ -34,3 +34,9 @@ flowchart TD
     Step6 --> Step7["Step 7: Validate Output"]
     Step7 --> Step8["Step 8: Deliver Report"]
 ```
+
+### Step 1: Understand User Intent
+Clarify target audience, scope, and document types.
+
+### Step 2: Discover Project
+Run `scan-project.py` to inspect manifests, frameworks, and existing files.
