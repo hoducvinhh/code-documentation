@@ -1,0 +1,13 @@
+[project]
+name = "sample-fastapi-service"
+version = "0.1.0"
+description = "Sample FastAPI and Pydantic application for testing"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.0"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
