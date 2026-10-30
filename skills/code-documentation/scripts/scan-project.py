@@ -6,6 +6,8 @@ import sys
 
 EXTENSION_LANGUAGE_MAP = {'.py': 'Python', '.ts': 'TypeScript', '.js': 'JavaScript', '.rs': 'Rust', '.go': 'Go'}
 
+MANIFEST_NAMES = {'package.json': 'Node.js', 'pyproject.toml': 'Python', 'Cargo.toml': 'Rust', 'go.mod': 'Go'}
+
 DEFAULT_IGNORE_DIRS = {'.git', 'node_modules', '.venv', 'venv', 'dist', 'build', 'target', '__pycache__'}
 from pathlib import Path
 
