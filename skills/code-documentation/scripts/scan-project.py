@@ -2,6 +2,9 @@
 """scan-project.py - Codebase discovery script."""
 import argparse
 import os
+import re
+
+ENTRY_POINT_PATTERNS = [re.compile(r'^(index|main|server|app)\.(ts|js|py)$')]
 import sys
 
 EXTENSION_LANGUAGE_MAP = {'.py': 'Python', '.ts': 'TypeScript', '.js': 'JavaScript', '.rs': 'Rust', '.go': 'Go'}
