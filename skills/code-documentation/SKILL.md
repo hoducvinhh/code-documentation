@@ -52,3 +52,6 @@ Select blueprint templates from `assets/` and plan non-destructive updates.
 
 ### Step 6: Author or Update Documentation
 Draft clear, anchor-friendly markdown adhering to formatting rules.
+
+### Step 7: Validate Output
+Run `check-links.py`, `validate-docs.py`, and `detect-secrets.py`.
