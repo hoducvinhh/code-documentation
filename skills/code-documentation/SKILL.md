@@ -55,3 +55,6 @@ Draft clear, anchor-friendly markdown adhering to formatting rules.
 
 ### Step 7: Validate Output
 Run `check-links.py`, `validate-docs.py`, and `detect-secrets.py`.
+
+### Step 8: Deliver Report
+Provide a clean summary report with links and verified parameters.
