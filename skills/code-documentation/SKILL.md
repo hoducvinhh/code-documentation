@@ -4,3 +4,5 @@ description: >-
   Analyze source code repositories and create, update, and validate accurate
   technical documentation.
 ---
+
+# Code Documentation Skill (`code-documentation`)
