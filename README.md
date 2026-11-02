@@ -14,7 +14,6 @@ An open-source, vendor-neutral agent skill conforming to the [Agent Skills Speci
 
 - [Overview](#overview)
 - [Core Philosophy](#core-philosophy)
-- [Repository Structure](#repository-structure)
 - [The 8-Step Documentation Workflow](#the-8-step-documentation-workflow)
 - [Developer CLI Usage (Zero Dependencies)](#developer-cli-usage-zero-dependencies)
   - [1. scan-project.py](#1-scan-projectpy)
@@ -53,63 +52,6 @@ Software documentation notoriously lags behind rapidly evolving codebases. Tradi
 3. **Preserve Human Effort**: Never blindly overwrite custom hand-crafted sections or architecture rationales; perform surgical, non-destructive updates.
 4. **Zero Runtime Dependencies**: All helper scripts rely strictly on Python 3's built-in standard library for instant execution across Linux, macOS, and Windows.
 5. **Universal Agent Compatibility**: Fully adheres to the `agentskills.io` standard, compatible with any LLM harness capable of system prompt ingestion or tool execution.
-
----
-
-## Repository Structure
-
-```text
-code-documentation/
-├── README.md                                  # Repository overview and comprehensive usage guide
-├── LICENSE                                    # MIT License
-├── CONTRIBUTING.md                             # Contribution guidelines and coding standards
-├── CHANGELOG.md                                # Release history and version updates
-├── SECURITY.md                                # Security and vulnerability disclosure policy
-├── ROADMAP.md                                 # Strategic roadmap and milestones
-├── .gitignore                                 # Git ignore definitions (ignores personal/plan files)
-│
-├── skills/
-│   └── code-documentation/
-│       ├── SKILL.md                           # Core agent skill definition (agentskills.io v1.0)
-│       │
-│       ├── references/                        # Modular technical guides for agents & engineers
-│       │   ├── project-discovery.md           # Framework detection and project layout heuristics
-│       │   ├── codebase-analysis.md           # Incremental codebase reading techniques
-│       │   ├── documentation-standards.md     # Markdown and style specifications
-│       │   ├── readme-guidelines.md           # Standards for production READMEs
-│       │   ├── documentation-validation.md    # Multi-stage validation procedures
-│       │   ├── quality-checklist.md           # Severity ranking and quality metrics
-│       │   ├── architecture-documentation.md  # Architectural overview guidelines
-│       │   ├── api-documentation.md           # REST and OpenAPI documentation standards
-│       │   ├── database-documentation.md      # Schemas and entity-relationship docs
-│       │   ├── mermaid-guidelines.md          # Diagramming best practices and rules
-│       │   └── documentation-updates.md       # Drift detection and update workflows
-│       │
-│       ├── scripts/                           # Deterministic CLI utilities (Python 3 stdlib)
-│       │   ├── scan-project.py                # Repo tree, manifests, and stack scanner
-│       │   ├── check-links.py                 # Relative links and anchor validator
-│       │   ├── validate-docs.py               # Document structure and placeholder linter
-│       │   └── detect-secrets.py              # Secret leak scanner and redactor
-│       │
-│       └── assets/                            # Documentation blueprints and templates
-│           ├── README.template.md             # Standard project README template
-│           ├── ARCHITECTURE.template.md       # Architecture blueprint template
-│           ├── API.template.md                # REST API reference template
-│           └── DATABASE.template.md           # Database model template
-│
-├── tests/                                     # Automated test suite and test fixtures
-│   ├── fixtures/                              # Sample codebases for testing
-│   │   ├── nodejs-typescript/                 # Sample TypeScript/Express service
-│   │   └── python/                            # Sample Python/FastAPI service
-│   ├── test_scan_project.py                   # Tests for scan-project.py
-│   ├── test_check_links.py                    # Tests for check-links.py
-│   ├── test_validate_docs.py                  # Tests for validate-docs.py
-│   └── test_detect_secrets.py                 # Tests for detect-secrets.py
-│
-└── .github/
-    └── workflows/
-        └── validate.yml                       # CI pipeline for automated testing
-```
 
 ---
 
