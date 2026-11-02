@@ -213,7 +213,7 @@ def main():
     )
 
     args = parser.parse_args()
-    target_path = Path(args.target).resolve()
+    target_path = Path(os.path.abspath(args.target))
 
     extra_ignores = set()
     if args.ignore:

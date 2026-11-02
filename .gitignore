@@ -64,3 +64,44 @@ cover/
 *~
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Planning, Task lists & Internal Notes (Personal / Work-in-Progress)
+[Pp][Ll][Aa][Nn]*.md
+[Tt][Oo][Dd][Oo]*.md
+[Nn][Oo][Tt][Ee][Ss]*.md
+[Tt][Aa][Ss][Kk]*.md
+[Dd][Rr][Aa][Ff][Tt]*.md
+drafts/
+scratch/
+scratch.*
+temp/
+tmp/
+internal/
+personal/
+private/
+
+# AI Assistant & Agent Artifacts
+.gemini/
+.claude/
+.cursor/
+.windsurf/
+.cline/
+.aidev/
+.agent/
+
+# Local & Personal Configurations / Secrets
+*.local
+*.local.*
+*.private
+.env*.local
+*.secret.*
+*.pem
+*.key
+
+# Logs & Temporary Files
+*.log
+*.bak
+*.tmp
+*.temp
+

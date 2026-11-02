@@ -278,7 +278,7 @@ def scan_project(root_path: Path, extra_ignores: set[str] | None = None) -> dict
     code_languages = {k: v for k, v in languages_count.items() if k not in ("Markdown", "JSON", "YAML", "TOML", "HTML", "CSS", "SCSS")}
     primary_language = max(code_languages, key=code_languages.get) if code_languages else "Unknown"
 
-    project_name = root_path.resolve().name
+    project_name = Path(os.path.abspath(root_path)).name
     # Override project name if found in manifest
     for detail in manifest_details.values():
         if isinstance(detail, dict) and detail.get("name"):
@@ -287,7 +287,7 @@ def scan_project(root_path: Path, extra_ignores: set[str] | None = None) -> dict
 
     return {
         "project_name": project_name,
-        "root_path": str(root_path.resolve()),
+        "root_path": str(Path(os.path.abspath(root_path))),
         "manifests": sorted(manifests),
         "manifest_details": manifest_details,
         "primary_language": primary_language,

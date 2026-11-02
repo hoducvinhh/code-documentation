@@ -169,7 +169,7 @@ def check_file_links(file_path: Path, root_path: Path) -> list[dict]:
             anchor_part = urllib.parse.unquote(parts[1]) if len(parts) > 1 else None
 
             # Resolve relative path from current file's directory
-            resolved_target = (file_path.parent / file_part).resolve()
+            resolved_target = Path(os.path.abspath(file_path.parent / file_part))
 
             if not resolved_target.exists():
                 issues.append({
@@ -265,7 +265,7 @@ def main():
     )
 
     args = parser.parse_args()
-    target_path = Path(args.target).resolve()
+    target_path = Path(os.path.abspath(args.target))
 
     try:
         issues = validate_links(target_path, check_templates=args.check_templates)
